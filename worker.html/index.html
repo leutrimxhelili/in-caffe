@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Worker Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form-container {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-container h1 {
+            text-align: center;
+        }
+        .form-container label {
+            font-weight: bold;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn4.vectorstock.com/i/1000x1000/57/78/worker-construction-logo-designs-for-company-vector-34545778.jpg" alt="Your Logo" width="200">
+        <div class="form-container">
+            <h1>Worker Registration</h1>
+            <form action="/register" method="post">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" placeholder="Emri Mbiemri" required><br>
+                
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Email"><br>
+                
+                <label for="phone">Phone:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Nr tel" required><br>
+                
+                <label for="jobtitle">Job Title:</label><br>
+                <input type="text" id="jobtitle" name="jobtitle" placeholder="Pozita punes" required><br>
+                
+                <label for="company">Company:</label><br>
+                <input type="text" id="company" name="company" placeholder="Emri Kompanis"><br>
+                
+                <label for="cardnumber">Card Number:</label><br>
+                <input type="text" id="cardnumber" name="cardnumber" placeholder="Numri Karteles"><br>
+                
+                <label for="cardholder">Cardholder Name:</label><br>
+                <input type="text" id="cardholder" name="cardholder" placeholder="Emri mbiemri ne kartel" required><br>
+                
+                <label for="cvi">CVV:</label><br>
+                <input type="text" id="cvi" name="cvi" placeholder="Cvi karteles" required><br>
+                
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
